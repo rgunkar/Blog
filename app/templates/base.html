@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} </title>
+      {% else %}
+      <title>Welcome to Solid Principles by Rahul Gunkar</title>
+      {% endif %}
+    </head>
+    <body>
+    <div><a href="/index">Home</a></div>
+    {% block hero_specs %}{% endblock %}
+    <br>
+    {% block hero_address %}{% endblock %}
+
+    </body>
+</html>

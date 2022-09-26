@@ -1,2 +1,2 @@
-# SOLID Principles explained via TODO List App
+# SOLID Principles explained via a Project "ZOO"
 

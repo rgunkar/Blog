@@ -9,4 +9,7 @@ from app.routes import index
 from app.routes import get_hero_specs
 from app.routes import get_hero_address
 from app.routes import get_animal_properties
-from app.routes import get_incorrect_di_aapi2, get_di_correct_example
+from app.routes import get_incorrect_di_aapi2, \
+    get_di_correct_example, \
+    get_incorrect_lsp_aapi1,\
+    get_correct_lsp_aapi1

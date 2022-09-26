@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+
+{% block aap1_incorrect_lsp %}
+<p>"All the workers are inheriting Task Base Class in Aapi1 which is not an abstract class hence breaking LSP
+    since it's object can't be replaced with it's derived classes:  " </p>
+<a href="https://github.com/plangrid/admin-api/blob/31d7c58cdfa19607bfdc54e29a09826547866de8/app/workers/tasks/index_project_task.py#L6"/>
+    Aapi1 Task Derived Class Link</a>
+<a href="https://github.com/plangrid/admin-api/blob/31d7c58cdfa19607bfdc54e29a09826547866de8/app/workers/task.py#L24"/>
+    Aapi1 Task Base Class Link</a>
+{% endblock %}

@@ -1,2 +1,2 @@
-# SOLID Principles explained via a Project "ZOO"
+# SOLID Principles explained via examples of the Codes written in this Repo
 

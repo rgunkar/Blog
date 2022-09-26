@@ -2,17 +2,28 @@
 
 
 {% block hero_specs %}
-    <a href="/get_hero_spec">See Superman's Specs</a>
+    <a href="/get_hero_spec">See Superman's Specs - (SRP)</a>
 {% endblock %}
 
 
 {% block hero_address %}
-    <a href="/get_hero_address">See Superman's Address</a>
+    <a href="/get_hero_address">See Superman's Address - (OCP)</a>
 {% endblock %}
 
 {% block animal_properties %}
-    <div> See Animal's Properties:  <tb>
+    <div> See Animal's Properties (ISP):  <tb>
     <a href="/get_animal_properties/cat">Cat </a>
     <a href="/get_animal_properties/pigeon">Pigeon </a>
     <a href="/get_animal_properties/duck">Duck </a> </tb></div>
 {% endblock %}
+
+{% block aap2_incorrect_DI %}
+    <div><a href="/get_incorrect_di_aapi2">Aapi2's incorrect DI </a></a>
+    </div>
+{% endblock %}
+
+{% block aap2_correct_DI %}
+    <div><a href="/get_correct_di_aapi2">See how Aapi2's correct DI implementtion should be</a></a>
+    </div>
+{% endblock %}
+

@@ -18,12 +18,12 @@ Functionality of the top 3 functions is simple and has 1 SOLID Principle in the 
 # Dependency Inversion
 ![Screenshot 2022-09-27 at 11 32 21 AM](https://user-images.githubusercontent.com/68590761/192445388-51921539-f31a-4b48-b93e-d5708410ca02.png)
 
-Click on the above link to see how Code in Admin-api-2 repo is breaking the Dependency Inversion Principle and how it can be corrected.
+Click on the above link to see how Code in **Admin-api-2** repo is breaking the Dependency Inversion Principle and how it can be corrected.
 
 # Liskov Substitution Principle
 ![Screenshot 2022-09-27 at 11 34 03 AM](https://user-images.githubusercontent.com/68590761/192445661-e2f35196-50f7-4a6a-8721-78ede2218ad0.png)
 
-Click on each link to see how Code in admin-api-1 is violating LSP Principle & how we can correct it.
+Click on each link to see how Code in **admin-api-1** is violating LSP Principle & how we can correct it.
 
 # Single Responsibility Principle
 ![Screenshot 2022-09-27 at 11 38 36 AM](https://user-images.githubusercontent.com/68590761/192446268-de740ca2-fbd3-4676-bb62-2b61c5f6d4b0.png)

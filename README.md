@@ -1,7 +1,7 @@
 # SOLID Principles explained via examples of the Codes written in this Repo
 
-# Run the following commands
-# Create virtualenv(Python 3.9) and install all the requirements
+Run the following commands
+Create virtualenv(Python 3.9) and install all the requirements
 <code> $ pip install -r requirements.txt </code>
 # Run the flask app
 <code> $ python runserver.py </code>
@@ -36,3 +36,15 @@ reenshot 2022-09-27 at 11 45 24 AM](https://user-images.githubusercontent.com/68
 
 As we can see, Hero Class has only one responsibility, ReturnHeroSpec also has one responsibily and we have different class for various features like HasHealth, CanAttack and any new class will need to just inherit the base Hero Class and no other class will be modified.
 We have only one reason to change the ReturunHeroSpec..that is when any more spec is to be returned.
+
+# Open Closed Principle
+![Screenshot 2022-09-27 at 11 56 11 AM](https://user-images.githubusercontent.com/68590761/192449152-c5eb5440-fa30-4e07-82d1-6fa2353cd819.png)
+
+As we can see, BlockAddress is open for extension and is extended by FullAddress and is closed for modification and has no need of further change.
+
+2nd link to print superman's address is using the above code in backgroud.
+
+![Screenshot 2022-09-27 at 11 57 55 AM](https://user-images.githubusercontent.com/68590761/192449460-38b61821-8590-4b0f-9952-e04a320e744a.png)
+
+
+

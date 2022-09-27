@@ -2,6 +2,7 @@
 
 Run the following commands
 Create virtualenv(Python 3.9) and install all the requirements
+
 <code> $ pip install -r requirements.txt </code>
 # Run the flask app
 <code> $ python runserver.py </code>
@@ -47,4 +48,44 @@ As we can see, BlockAddress is open for extension and is extended by FullAddress
 ![Screenshot 2022-09-27 at 11 57 55 AM](https://user-images.githubusercontent.com/68590761/192449460-38b61821-8590-4b0f-9952-e04a320e744a.png)
 
 
+# Interface Segragation Principle
 
+Clicking on Different Animals returns different ability
+
+![Screenshot 2022-09-27 at 12 04 36 PM](https://user-images.githubusercontent.com/68590761/192450586-90455cc6-9f77-45ce-8ec4-5e8d62bd51b2.png)
+
+For example:- Cat and Only Walk & Eat, Pigeon can eat, walk and Fly etc.
+
+![Screenshot 2022-09-27 at 12 06 00 PM](https://user-images.githubusercontent.com/68590761/192450829-012c6836-d809-4ed1-9134-eca1273b84da.png)
+
+![Screenshot 2022-09-27 at 12 06 19 PM](https://user-images.githubusercontent.com/68590761/192450890-29fa5bb0-0ecb-4ebb-aa01-e9771f9ccc5f.png)
+
+Let's see how ISP is implemented behind the scene.
+
+
+![Screenshot 2022-09-27 at 12 07 57 PM](https://user-images.githubusercontent.com/68590761/192451232-58d005a8-a6b5-4f49-b22f-02d65e0b2aa8.png)
+
+I created a seperate class Animal with basic functionality like Eat & Walk. Now since not all animal can fly or swim, I created an abstract classes for these ability , <code> 
+<tr>class SwimAbility(ABC):
+
+    @abstractmethod
+    def swim(self):
+        pass
+
+</tr>
+class FlyAbility(ABC):
+
+    @abstractmethod
+    def fly(self):
+        pass
+        </code>
+        
+  Now animals can only implement the functions they can do instead of forcing all the functions they can't do which they would have to do if we had kept all the functionality in Animal class
+        
+![Screenshot 2022-09-27 at 12 12 38 PM](https://user-images.githubusercontent.com/68590761/192452292-787cf441-635b-4647-960e-c9b353b0d03d.png)
+
+    
+ We are returning the activities of the animals accordingly.
+ ![Screenshot 2022-09-27 at 12 14 35 PM](https://user-images.githubusercontent.com/68590761/192452669-c3189106-b3a2-4726-a331-5a630b4a9c50.png)
+   
+ 
